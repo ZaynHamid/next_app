@@ -38,6 +38,7 @@ export default async function Home() {
             <p>{val.body}</p>
           </div>
       ))}    
+      
     </main>
   );
 }
