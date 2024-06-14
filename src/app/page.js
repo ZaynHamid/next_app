@@ -9,7 +9,7 @@ import connectDB from "@/lib/connectDB";
 import User from "@/models/users";
 
 const getData = async () => {
-  const res = await fetch('http://localhost:3000/api/blog/posts')
+  const res = await fetch('https://next-app-mu-henna.vercel.app')
   const data = await res.json()
   return data
 }
@@ -38,7 +38,7 @@ export default async function Home() {
             <p>{val.body}</p>
           </div>
       ))}    
-      
+
     </main>
   );
 }
